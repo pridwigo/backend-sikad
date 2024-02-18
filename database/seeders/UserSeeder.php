@@ -20,7 +20,8 @@ class UserSeeder extends Seeder
             'name' => 'Dwi',
             'email' => 'dwi@gmail.com',
             'email_verified_at' => now(),
-            'password' => Hash::make('123123')
+            'password' => Hash::make('123123'),
+            'roles'=> 'mahasiswa'
         ]);
     }
 }
