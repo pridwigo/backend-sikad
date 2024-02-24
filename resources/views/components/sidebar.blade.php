@@ -21,8 +21,31 @@
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Users</span></a>
                 <ul class="dropdown-menu">
-                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
+                    <li>
                         <a class="nav-link" href="{{ route('user.index') }}">Users List</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Courses</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ route('course.index') }}">Courses List</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <ul class="sidebar-menu">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Schedules</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ route('schedule.index') }}">Schedules List</a>
                     </li>
                 </ul>
             </li>

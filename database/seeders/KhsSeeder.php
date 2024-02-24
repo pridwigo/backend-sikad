@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Course;
+use App\Models\Khs;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CourseSeeder extends Seeder
+class KhsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Course::factory(1)->create();
+        Khs::factory()->count(1)->create();
     }
 }
