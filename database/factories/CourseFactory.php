@@ -23,7 +23,7 @@ class CourseFactory extends Factory
             'academic_year' => '2023/2024',
             'sks' => 3,
             'course_code' => $this->faker->unique()->regexify('[A-Z]{3}[0-9]{3}'),
-            'description' => $this->faker->paragraph(3),
+            'description' => $this->faker->word,
             // 'course_name' => fake()->word(),
             // 'lecturer_id' => 3,
         ];

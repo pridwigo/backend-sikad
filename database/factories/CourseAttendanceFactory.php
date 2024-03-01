@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\AbsenceAttendance>
  */
-class AbsenceAttendanceFactory extends Factory
+class CourseAttendanceFactory extends Factory
 {
     /**
      * Define the model's default state.
