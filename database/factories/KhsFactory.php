@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Schedule>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Khs>
  */
-class ScheduleFactory extends Factory
+class KhsFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,11 +18,10 @@ class ScheduleFactory extends Factory
     {
         return [
             'course_id' => \App\Models\Course::factory(),
-            'day' => $this->faker->randomElement(['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']),
-            'start_time' => $this->faker->randomElement(['07:00', '09:00', '11:00', '13:00', '15:00', '18:00']),
-            'end_time' => $this->faker->randomElement(['09:00', '11:00', '13:00', '15:00', '18:00', '20:00']),
-            'room' => $this->faker->randomElement(['A1', 'A2', 'A3', 'A4', 'A5', 'A6']),
-            'attendance_code' => $this->faker->randomElement(['A1', 'A2', 'A3', 'A4', 'A5', 'A6']),
+            'student_id' => \App\Models\User::factory(),
+            'score' => $this->faker->randomElement(['60', '70', '80', '90', '100']),
+            'grade' => $this->faker->randomElement(['E', 'D', 'C', 'B', 'A']),
+            'information' => $this->faker->randomElement(['Lulus', 'Tidak Lulus']),
             'academic_year' => $this->faker->randomElement(['2020/2023', '2023/2024', '2024/2025']),
             'semester' => $this->faker->randomElement(['Ganjil', 'Genap']),
             'created_by' => $this->faker->randomElement(['1', '2', '3']),

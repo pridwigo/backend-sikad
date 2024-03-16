@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('course_name');
             $table->bigInteger('lecturer_id')->unsigned();
+            $table->string('semester');
+            $table->string('academic_year');
+            $table->string('sks');
+            $table->string('course_code');
+            $table->string('description');
             $table->timestamps();
 
             $table->foreign('lecturer_id', 'lecturerid_foreign')->references('id')->on('users');

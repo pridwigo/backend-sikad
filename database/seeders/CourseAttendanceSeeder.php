@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\Schedule;
+use App\Models\CourseAttendance;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ScheduleSeeder extends Seeder
+class CourseAttendanceSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Schedule::factory(25)->create();
+        CourseAttendance::factory(50)->create();
     }
 }
